@@ -3,11 +3,11 @@
 
 <h1>My Tasks</h1>
 
-<ul class="form-check list-unstyled">
-<% @tasks.each do |task| %>
-<li class="form-check-label"><%= task.title %></li>
-<% end %>
-</ul>
+  <ul>
+  <% @tasks.each do |task| %>
+  <li><%= link_to task.title, task %></li>
+  <% end %>
+  </ul>
 
 </div>
 </div>
